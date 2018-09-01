@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: msa-weather-city-server
+  redis:
+    host: 192.168.119.163
+    port: 6379
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8082
+
+

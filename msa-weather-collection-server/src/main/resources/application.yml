@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: msa-weather-collection-server
+  redis:
+    host: 192.168.119.163
+    port: 6379
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8085
+
+weather:
+  url: https://www.sojson.com/open/api/weather/json.shtml?city=
+  timeout: 1800
+  interval: 259200000
+  sleep: 4000
